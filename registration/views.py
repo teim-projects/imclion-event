@@ -28,7 +28,7 @@ def imc_view(request):
                 age=request.POST.get('age') or None,
                 category=request.POST.get('category'),
                 participation_type=request.POST.get('participation_type'),
-                call_time=request.POST.get('call_time'),
+                call_time=request.POST.get('preferred_call_time'),  # ✅ FIXED
                 message=request.POST.get('message'),
                 id_proof=request.FILES.get('id_proof'),
                 payment_done=payment_done
